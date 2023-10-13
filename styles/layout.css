@@ -61,7 +61,8 @@ a#navicon {
     margin-bottom: 2%;
   }
 
-  h1, h2 {
+  h1,
+  h2 {
     text-align: center;
   }
 
@@ -87,12 +88,13 @@ a#navicon {
     color: black
   }
 
-  .services > img {
+  .services>img {
     margin-bottom: 5%;
     margin-top: 5%;
   }
 
-  .services h2, p{
+  .services h2,
+  p {
     margin-left: 5%;
     margin-right: 5%;
   }
@@ -106,18 +108,19 @@ a#navicon {
     padding-top: 15%;
     justify-content: space-between;
     line-height: 3em;
+    margin-bottom: 90px;
   }
 
-  .contact img {
+  /* .contact img {
     display: none;
-  }
+  } */
 
-  .contact-us p{
+  .contact-us p {
     align-content: space-around;
     font-size: x-large;
   }
 
-  .contact-us p a{
+  .contact-us p a {
     color: black;
   }
 
@@ -129,7 +132,7 @@ a#navicon {
 
   }
 
-  .services h2{
+  .services h2 {
     position: absolute;
     top: 26%;
     left: 40%;
@@ -137,12 +140,13 @@ a#navicon {
     color: white;
   }
 
-  /* .container {
- 
-  } */
+  main {
+    margin-bottom: 60px;
+  }
 
-  /* <section class="offer">
-  <div class="services"> h2 and img */
+  .offer {
+    margin-bottom: 90px;
+  }
 
 }
 
@@ -266,12 +270,12 @@ a#navicon {
     min-height: 750px;
     min-width: 600px;
   }
-  
+
   .contact-us {
     grid-column: 1 / span 1;
     grid-row: 1 / span 1;
   }
-  
+
   .contact img {
     grid-column: 2 / span 1;
     grid-row: 1 / span 1;
@@ -279,8 +283,8 @@ a#navicon {
     height: 200px;
     padding-top: 50px;
   }
-  
-  
+
+
   .contact-us p {
     font-size: x-large;
     line-height: 2
@@ -291,7 +295,7 @@ a#navicon {
     overflow: hidden;
     z-index: 0;
   }
-  
+
   .services {
     display: grid;
     grid-template-columns: 1fr 3fr;
@@ -300,20 +304,20 @@ a#navicon {
     column-gap: 1em;
     z-index: 0;
   }
-  
+
   .services img {
     min-width: 350px;
     height: 100%;
     grid-column: 1 / span 1;
     grid-row: 1 / span 4;
   }
-  
+
   .services h2 {
     grid-column-start: 2;
     grid-row: 1 / span 1;
     padding-top: 1em;
   }
-  
+
   .services p {
     grid-column: 2 /span 1;
     grid-row: 2 / span 4;
