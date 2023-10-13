@@ -29,7 +29,7 @@ a#navicon {
   a#navicon:hover+ul,
   nav ul:hover {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     padding-left: 4%;
     background-color: #E98973;
     align-items: flex-start;
@@ -105,6 +105,7 @@ a#navicon {
     align-content: center;
     padding-top: 15%;
     justify-content: space-between;
+    line-height: 3em;
   }
 
   .contact img {
@@ -123,7 +124,25 @@ a#navicon {
   .services {
     display: flex;
     flex-direction: column;
+    position: relative;
+    text-align: center;
+
   }
+
+  .services h2{
+    position: absolute;
+    top: 26%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    color: white;
+  }
+
+  /* .container {
+ 
+  } */
+
+  /* <section class="offer">
+  <div class="services"> h2 and img */
 
 }
 
