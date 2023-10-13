@@ -15,14 +15,18 @@ a#navicon {
   html {
     background-color: aliceblue;
   }
+
   a#navicon {
     display: block;
     padding: 0.5%;
   }
+
   nav ul {
     display: none;
   }
-  a#navicon:hover+ul, nav ul:hover {
+
+  a#navicon:hover+ul,
+  nav ul:hover {
     display: flex;
     flex-direction: column;
     padding-left: 4%;
@@ -33,14 +37,11 @@ a#navicon {
     width: 30%;
 
 
-    }
-
-  li > a {
-    font-size: x-large;
   }
 
-
-  
+  li>a {
+    font-size: x-large;
+  }
 
   aside {
     display: none;
@@ -55,7 +56,8 @@ a#navicon {
     margin: 5%;
   }
 
-  .home-text h1, h2 {
+  .home-text h1,
+  h2 {
     font-size: xx-large;
     margin-bottom: 2%;
   }
@@ -68,24 +70,43 @@ a#navicon {
   nav>ul>li>a {
     color: black
   }
-  
-  
+
+
   nav>ul>li>a:link {
     color: black
   }
-  
+
   nav>ul>li>a:hover {
     color: black
   }
-  
+
   nav>ol>ul>a:visited {
     color: black
   }
-  
 
+  .contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    padding-top: 15%;
+    justify-content: space-between;
+  }
 
+  .contact img {
+    display: none;
+  }
 
-  } 
+  .contact-us p{
+    align-content: space-around;
+    font-size: x-large;
+  }
+
+  .contact-us p a{
+    color: black;
+  }
+
+}
 
 
 
@@ -106,13 +127,13 @@ a#navicon {
     grid-template-columns: 1fr 2fr;
     padding-top: 50px;
   }
-  
+
   aside {
     grid-column-start: 1;
     background-color: #88B2CC;
     min-width: 200px;
   }
-  
+
   aside>p {
     padding: 15px 0 15px 0;
   }
@@ -138,16 +159,16 @@ a#navicon {
   nav>ul>li>a {
     color: white;
   }
-  
-  
+
+
   nav>ul>li>a:link {
     color: white;
   }
-  
+
   nav>ul>li>a:hover {
     color: white
   }
-  
+
   nav>ol>ul>a:visited {
     color: white
   }
@@ -157,21 +178,21 @@ a#navicon {
     line-height: 2;
     overflow: hidden;
   }
-  
-  
+
+
   main>section>p {
     line-height: 2;
     text-align: left;
     padding: 0 15px 0 15px;
     overflow: hidden;
   }
-  
+
   main>aside>ul>li {
     list-style-type: square;
     line-height: 2;
   }
-  
-  
+
+
   section {
     grid-column-start: 2;
     grid-column-end: 3;
@@ -185,18 +206,47 @@ a#navicon {
   }
 
 
-h1,
-h2 {
-  color: white;
-}
+  h1,
+  h2 {
+    color: white;
+  }
 
-h1 {
-  font-size: xx-large
-}
+  h1 {
+    font-size: xx-large
+  }
 
-h2 {
-  font-size: x-large;
-}
+  h2 {
+    font-size: x-large;
+  }
+
+  .contact {
+    display: grid;
+    grid-column: 2;
+    grid-row: 1;
+    background-color: #E7D4C0;
+    padding: 80px 80px 50px 300px;
+    min-height: 750px;
+    min-width: 600px;
+  }
+  
+  .contact-us {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+  }
+  
+  .contact img {
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 1;
+    width: 300px;
+    height: 200px;
+    padding-top: 50px;
+  }
+  
+  
+  .contact-us p {
+    font-size: x-large;
+    line-height: 2
+  }
 
 }
 
@@ -245,34 +295,7 @@ footer>address {
   padding-top: 25px;
 }
 
-.contact {
-  display: grid;
-  grid-column: 2;
-  grid-row: 1;
-  background-color: #E7D4C0;
-  padding: 80px 80px 50px 300px;
-  min-height: 750px;
-  min-width: 600px;
-}
 
-.contact-us {
-  grid-column: 1 / span 1;
-  grid-row: 1 / span 1;
-}
-
-.contact img {
-  grid-column: 2 / span 1;
-  grid-row: 1 / span 1;
-  width: 300px;
-  height: 200px;
-  padding-top: 50px;
-}
-
-
-.contact-us p {
-  font-size: x-large;
-  line-height: 2
-}
 
 .offer {
   padding: 100px 70px;
