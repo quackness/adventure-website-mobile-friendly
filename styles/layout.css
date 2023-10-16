@@ -363,14 +363,11 @@ footer {
 footer>address {
   color: white;
   font-weight: bold;
-  font-size: large;
+  font-size: medium;
   text-align: center;
   width: 100%;
   padding-top: 25px;
 }
-
-
-
 
 
 .video {
